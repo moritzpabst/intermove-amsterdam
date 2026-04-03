@@ -12,8 +12,8 @@ const config: Config = {
         sans: ["var(--font-inter)", "sans-serif"],
       },
       colors: {
-        accent: "#E8603C",
-        "accent-dark": "#D4542F",
+        accent: "#00A86B",
+        "accent-dark": "#007A4E",
         "near-black": "#0F0F0F",
         "light-grey": "#F5F5F5",
       },

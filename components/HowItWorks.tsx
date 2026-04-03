@@ -3,7 +3,7 @@ const steps = [
     number: "01",
     title: "Choose your bundle",
     description:
-      "Pick Standard for a fully curated setup, or Personalised if you want to choose what goes in your room.",
+      "Pick Standard for a fully curated set of pre-loved pieces, or Personalised if you want to choose which second-hand items go in your room.",
   },
   {
     number: "02",
@@ -49,7 +49,7 @@ export default function HowItWorks() {
               )}
 
               {/* Step number badge */}
-              <div className="relative w-11 h-11 rounded-2xl bg-[#E8603C] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-200">
+              <div className="relative w-11 h-11 rounded-2xl bg-[#00A86B] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-200">
                 <span className="text-white text-xs font-bold tracking-wide">
                   {step.number}
                 </span>
@@ -69,7 +69,7 @@ export default function HowItWorks() {
         <div className="mt-16 pt-10 border-t border-gray-100">
           <a
             href="#bundles"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[#E8603C] hover:gap-3 transition-all duration-200"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#00A86B] hover:gap-3 transition-all duration-200"
           >
             See bundle options
             <svg

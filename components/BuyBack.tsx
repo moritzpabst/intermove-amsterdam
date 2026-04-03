@@ -54,7 +54,7 @@ export default function BuyBack() {
             {/* Hero stat */}
             <div className="bg-[#0F0F0F] rounded-2xl p-10 text-center">
               <div className="text-7xl font-black text-white tracking-tight mb-2">
-                40%
+                25%
               </div>
               <div className="text-gray-500 text-sm font-medium">
                 average buy-back value
@@ -68,7 +68,7 @@ export default function BuyBack() {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white rounded-2xl p-6 text-center">
                 <div className="text-2xl font-black text-[#0F0F0F] tracking-tight mb-1">
-                  €320+
+                  €222+
                 </div>
                 <div className="text-xs text-gray-400 leading-snug">
                   avg. money back
@@ -87,7 +87,7 @@ export default function BuyBack() {
             {/* CTA */}
             <a
               href="#contact"
-              className="bg-white rounded-2xl p-5 flex items-center justify-between group hover:border-[#E8603C] border-2 border-transparent transition-all duration-200"
+              className="bg-white rounded-2xl p-5 flex items-center justify-between group hover:border-[#00A86B] border-2 border-transparent transition-all duration-200"
             >
               <div>
                 <div className="text-sm font-semibold text-[#0F0F0F]">
@@ -98,7 +98,7 @@ export default function BuyBack() {
                 </div>
               </div>
               <svg
-                className="w-5 h-5 text-gray-300 group-hover:text-[#E8603C] transition-colors"
+                className="w-5 h-5 text-gray-300 group-hover:text-[#00A86B] transition-colors"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

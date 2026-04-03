@@ -6,8 +6,8 @@ type BedSize = "90" | "140";
 type BundleType = "standard" | "personalised";
 
 const PRICES: Record<BundleType, Record<BedSize, number>> = {
-  standard: { "90": 800, "140": 850 },
-  personalised: { "90": 900, "140": 950 },
+  standard: { "90": 889, "140": 929 },
+  personalised: { "90": 999, "140": 1049 },
 };
 
 const STANDARD_BENEFITS = [
@@ -26,9 +26,9 @@ const PERSONALISED_BENEFITS = [
 
 function CheckIcon() {
   return (
-    <span className="w-4 h-4 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0">
+    <span className="w-4 h-4 rounded-full bg-green-50 flex items-center justify-center flex-shrink-0">
       <svg
-        className="w-2 h-2 text-[#E8603C]"
+        className="w-2 h-2 text-[#00A86B]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -77,7 +77,7 @@ export default function BundleSelector() {
           <div
             className={`bg-white rounded-2xl p-8 border-2 cursor-pointer transition-all duration-200 ${
               selected === "standard"
-                ? "border-[#E8603C]"
+                ? "border-[#00A86B]"
                 : "border-gray-100 hover:border-gray-200"
             }`}
             onClick={() => setSelected("standard")}
@@ -85,7 +85,7 @@ export default function BundleSelector() {
             <div className="flex items-start justify-between mb-5">
               <div>
                 {selected === "standard" && (
-                  <div className="inline-flex items-center bg-orange-50 text-[#E8603C] text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-3">
+                  <div className="inline-flex items-center bg-green-50 text-[#00A86B] text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-3">
                     Selected
                   </div>
                 )}
@@ -96,8 +96,7 @@ export default function BundleSelector() {
             </div>
 
             <p className="text-sm text-gray-400 leading-relaxed mb-7">
-              We curate everything. You just pick your bed size. Fast, simple —
-              no decisions, no stress.
+              We curate pre-loved, second-hand furniture for you. Pick your bed size — fast, simple, no stress.
             </p>
 
             {/* Bed size toggle */}
@@ -135,6 +134,16 @@ export default function BundleSelector() {
               </div>
             </div>
 
+            {/* Mattress highlight */}
+            <div className="flex items-center gap-2 bg-green-50 border border-green-100 rounded-xl px-3.5 py-2.5 mb-5">
+              <svg className="w-3.5 h-3.5 text-[#00A86B] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-xs font-semibold text-[#00A86B]">
+                Includes a brand new {bedSizes.standard}×200cm mattress
+              </span>
+            </div>
+
             {/* Benefits */}
             <ul className="space-y-2.5 mb-8">
               {STANDARD_BENEFITS.map((b) => (
@@ -149,7 +158,7 @@ export default function BundleSelector() {
               onClick={() => setSelected("standard")}
               className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 ${
                 selected === "standard"
-                  ? "bg-[#E8603C] text-white hover:bg-[#D4542F]"
+                  ? "bg-[#00A86B] text-white hover:bg-[#007A4E]"
                   : "bg-[#F5F5F5] text-gray-500 hover:bg-gray-100"
               }`}
             >
@@ -161,7 +170,7 @@ export default function BundleSelector() {
           <div
             className={`bg-white rounded-2xl p-8 border-2 cursor-pointer transition-all duration-200 ${
               selected === "personalised"
-                ? "border-[#E8603C]"
+                ? "border-[#00A86B]"
                 : "border-gray-100 hover:border-gray-200"
             }`}
             onClick={handlePersonalisedClick}
@@ -171,7 +180,7 @@ export default function BundleSelector() {
                 <div
                   className={`inline-flex items-center text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-3 transition-all ${
                     selected === "personalised"
-                      ? "bg-orange-50 text-[#E8603C]"
+                      ? "bg-green-50 text-[#00A86B]"
                       : "bg-[#0F0F0F] text-white"
                   }`}
                 >
@@ -184,8 +193,7 @@ export default function BundleSelector() {
             </div>
 
             <p className="text-sm text-gray-400 leading-relaxed mb-7">
-              Design your room with our planner. Choose what goes in. More
-              control, same simple pricing.
+              Design your room with our planner. Choose which pre-loved, second-hand pieces go in — more control, same simple pricing.
             </p>
 
             {/* Bed size toggle */}
@@ -223,6 +231,16 @@ export default function BundleSelector() {
               </div>
             </div>
 
+            {/* Mattress highlight */}
+            <div className="flex items-center gap-2 bg-green-50 border border-green-100 rounded-xl px-3.5 py-2.5 mb-5">
+              <svg className="w-3.5 h-3.5 text-[#00A86B] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-xs font-semibold text-[#00A86B]">
+                Includes a brand new {bedSizes.personalised}×200cm mattress
+              </span>
+            </div>
+
             {/* Benefits */}
             <ul className="space-y-2.5 mb-8">
               {PERSONALISED_BENEFITS.map((b) => (
@@ -237,7 +255,7 @@ export default function BundleSelector() {
               onClick={handlePersonalisedClick}
               className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 ${
                 selected === "personalised"
-                  ? "bg-[#E8603C] text-white hover:bg-[#D4542F]"
+                  ? "bg-[#00A86B] text-white hover:bg-[#007A4E]"
                   : "bg-[#F5F5F5] text-gray-500 hover:bg-gray-100"
               }`}
             >

@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-gray-600">
-            © 2025 Intermove B.V. · Amsterdam, Netherlands
+            © 2026 Intermove B.V. · Amsterdam, Netherlands
           </p>
           <p className="text-xs text-gray-700">
             Designed for students, built for the planet.

@@ -150,7 +150,7 @@ export default function RoomPlanner() {
                     onClick={() => setBundleType(type)}
                     className={`py-2.5 px-4 rounded-xl text-sm font-semibold text-left transition-all duration-200 ${
                       bundleType === type
-                        ? "bg-[#E8603C] text-white shadow-sm"
+                        ? "bg-[#00A86B] text-white shadow-sm"
                         : "bg-white text-gray-500 hover:text-[#0F0F0F]"
                     }`}
                   >
@@ -230,14 +230,14 @@ export default function RoomPlanner() {
                         onClick={() => toggleItem(id)}
                         className={`py-2.5 px-4 rounded-xl text-sm font-medium flex items-center justify-between transition-all duration-200 border ${
                           on
-                            ? "bg-white border-[#E8603C] text-[#0F0F0F]"
+                            ? "bg-white border-[#00A86B] text-[#0F0F0F]"
                             : "bg-white border-gray-100 text-gray-400"
                         }`}
                       >
                         <span>{label}</span>
                         <span
                           className={`text-xs font-semibold ${
-                            on ? "text-[#E8603C]" : "text-gray-300"
+                            on ? "text-[#00A86B]" : "text-gray-300"
                           }`}
                         >
                           {on ? "✓ Added" : "+ Add"}
@@ -264,7 +264,7 @@ export default function RoomPlanner() {
                 </span>
               </div>
               {bundleType === "standard" ? (
-                <span className="text-[10px] bg-orange-50 text-[#E8603C] font-semibold px-3 py-1.5 rounded-full">
+                <span className="text-[10px] bg-green-50 text-[#00A86B] font-semibold px-3 py-1.5 rounded-full">
                   We&apos;ll handle the layout
                 </span>
               ) : (

@@ -47,7 +47,7 @@ export default function Navbar() {
           ))}
           <a
             href="#bundles"
-            className="bg-[#E8603C] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#D4542F] transition-colors"
+            className="bg-[#00A86B] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#007A4E] transition-colors"
           >
             See Bundles
           </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
           ))}
           <a
             href="#bundles"
-            className="bg-[#E8603C] text-white text-sm font-semibold px-5 py-3 rounded-lg text-center hover:bg-[#D4542F] transition-colors mt-2"
+            className="bg-[#00A86B] text-white text-sm font-semibold px-5 py-3 rounded-lg text-center hover:bg-[#007A4E] transition-colors mt-2"
             onClick={() => setMenuOpen(false)}
           >
             See Bundles

@@ -94,7 +94,7 @@ export default function SellToUs() {
                       setForm((p) => ({ ...p, name: e.target.value }))
                     }
                     placeholder="Your full name"
-                    className="w-full bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#E8603C] transition-colors placeholder:text-gray-300"
+                    className="w-full bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#00A86B] transition-colors placeholder:text-gray-300"
                   />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export default function SellToUs() {
                       setForm((p) => ({ ...p, email: e.target.value }))
                     }
                     placeholder="your@email.com"
-                    className="w-full bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#E8603C] transition-colors placeholder:text-gray-300"
+                    className="w-full bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#00A86B] transition-colors placeholder:text-gray-300"
                   />
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function SellToUs() {
                   }
                   placeholder="What are you selling? Include type, dimensions, brand if known."
                   rows={4}
-                  className="w-full bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#E8603C] transition-colors resize-none placeholder:text-gray-300"
+                  className="w-full bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#00A86B] transition-colors resize-none placeholder:text-gray-300"
                 />
               </div>
 
@@ -144,7 +144,7 @@ export default function SellToUs() {
                         condition: e.target.value as Condition,
                       }))
                     }
-                    className="w-full appearance-none bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#E8603C] transition-colors"
+                    className="w-full appearance-none bg-white rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-gray-100 focus:outline-none focus:border-[#00A86B] transition-colors"
                   >
                     <option value="">Select condition</option>
                     <option value="good">Good — minor signs of use</option>
@@ -181,7 +181,7 @@ export default function SellToUs() {
                   </span>
                 </label>
                 <div
-                  className="w-full bg-white rounded-xl px-4 py-5 border-2 border-dashed border-gray-200 text-center cursor-pointer hover:border-[#E8603C] transition-colors group"
+                  className="w-full bg-white rounded-xl px-4 py-5 border-2 border-dashed border-gray-200 text-center cursor-pointer hover:border-[#00A86B] transition-colors group"
                   onClick={() => fileRef.current?.click()}
                 >
                   <input
@@ -197,7 +197,7 @@ export default function SellToUs() {
                     </p>
                   ) : (
                     <>
-                      <p className="text-sm text-gray-400 group-hover:text-[#E8603C] transition-colors">
+                      <p className="text-sm text-gray-400 group-hover:text-[#00A86B] transition-colors">
                         Click to upload a photo
                       </p>
                       <p className="text-xs text-gray-300 mt-1">
@@ -210,7 +210,7 @@ export default function SellToUs() {
 
               <button
                 type="submit"
-                className="w-full bg-[#E8603C] text-white font-semibold py-4 rounded-xl hover:bg-[#D4542F] transition-colors text-sm"
+                className="w-full bg-[#00A86B] text-white font-semibold py-4 rounded-xl hover:bg-[#007A4E] transition-colors text-sm"
               >
                 Submit Item
               </button>

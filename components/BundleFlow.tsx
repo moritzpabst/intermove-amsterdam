@@ -15,8 +15,8 @@ type FurnitureId = "desk" | "wardrobe" | "bookshelf" | "chair" | "lamp";
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 const PRICES = {
-  standard: { "90": 800, "140": 850 } as Record<BedSize, number>,
-  personalised: { "90": 900, "140": 950 } as Record<BedSize, number>,
+  standard: { "90": 889, "140": 929 } as Record<BedSize, number>,
+  personalised: { "90": 999, "140": 1049 } as Record<BedSize, number>,
 };
 
 const STANDARD_INCLUDES = [
@@ -225,7 +225,7 @@ function DimInput({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3.5 pr-10 text-sm text-[#0F0F0F] border-2 border-transparent focus:outline-none focus:border-[#E8603C] transition-colors placeholder:text-gray-300"
+          className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3.5 pr-10 text-sm text-[#0F0F0F] border-2 border-transparent focus:outline-none focus:border-[#00A86B] transition-colors placeholder:text-gray-300"
         />
         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-gray-400 font-medium pointer-events-none">
           m
@@ -417,11 +417,11 @@ export default function BundleFlow() {
               {/* Standard card */}
               <button
                 onClick={() => goTo("standard")}
-                className="text-left bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#E8603C] transition-all duration-200 group"
+                className="text-left bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#00A86B] transition-all duration-200 group"
               >
-                <div className="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#E8603C] transition-colors duration-200">
+                <div className="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#00A86B] transition-colors duration-200">
                   <svg
-                    className="w-5 h-5 text-[#E8603C] group-hover:text-white transition-colors"
+                    className="w-5 h-5 text-[#00A86B] group-hover:text-white transition-colors"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -457,7 +457,7 @@ export default function BundleFlow() {
                       key={b}
                       className="flex items-center gap-2.5 text-sm text-gray-500"
                     >
-                      <span className="w-4 h-4 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0 text-[#E8603C]">
+                      <span className="w-4 h-4 rounded-full bg-green-50 flex items-center justify-center flex-shrink-0 text-[#00A86B]">
                         <CheckMark size="xs" />
                       </span>
                       {b}
@@ -467,9 +467,9 @@ export default function BundleFlow() {
 
                 <div className="flex items-center justify-between pt-2 border-t border-gray-50">
                   <span className="text-2xl font-black text-[#0F0F0F]">
-                    From €800
+                    From €889
                   </span>
-                  <span className="flex items-center gap-1.5 text-[#E8603C] text-sm font-semibold group-hover:gap-2.5 transition-all">
+                  <span className="flex items-center gap-1.5 text-[#00A86B] text-sm font-semibold group-hover:gap-2.5 transition-all">
                     Get started <ArrowRight />
                   </span>
                 </div>
@@ -478,11 +478,11 @@ export default function BundleFlow() {
               {/* Personalised card */}
               <button
                 onClick={() => goTo("personalised-dims")}
-                className="text-left bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#E8603C] transition-all duration-200 group"
+                className="text-left bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#00A86B] transition-all duration-200 group"
               >
-                <div className="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#E8603C] transition-colors duration-200">
+                <div className="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#00A86B] transition-colors duration-200">
                   <svg
-                    className="w-5 h-5 text-[#E8603C] group-hover:text-white transition-colors"
+                    className="w-5 h-5 text-[#00A86B] group-hover:text-white transition-colors"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -496,7 +496,7 @@ export default function BundleFlow() {
                   </svg>
                 </div>
 
-                <div className="inline-flex items-center bg-[#E8603C] text-white text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
+                <div className="inline-flex items-center bg-[#00A86B] text-white text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
                   Most popular
                 </div>
 
@@ -518,7 +518,7 @@ export default function BundleFlow() {
                       key={b}
                       className="flex items-center gap-2.5 text-sm text-gray-500"
                     >
-                      <span className="w-4 h-4 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0 text-[#E8603C]">
+                      <span className="w-4 h-4 rounded-full bg-green-50 flex items-center justify-center flex-shrink-0 text-[#00A86B]">
                         <CheckMark size="xs" />
                       </span>
                       {b}
@@ -528,9 +528,9 @@ export default function BundleFlow() {
 
                 <div className="flex items-center justify-between pt-2 border-t border-gray-50">
                   <span className="text-2xl font-black text-[#0F0F0F]">
-                    From €900
+                    From €999
                   </span>
-                  <span className="flex items-center gap-1.5 text-[#E8603C] text-sm font-semibold group-hover:gap-2.5 transition-all">
+                  <span className="flex items-center gap-1.5 text-[#00A86B] text-sm font-semibold group-hover:gap-2.5 transition-all">
                     Start planning <ArrowRight />
                   </span>
                 </div>
@@ -549,7 +549,7 @@ export default function BundleFlow() {
             <div className="max-w-xl mx-auto">
               {/* Header */}
               <div className="mb-10">
-                <div className="inline-flex items-center bg-orange-50 text-[#E8603C] text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
+                <div className="inline-flex items-center bg-green-50 text-[#00A86B] text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
                   Standard Bundle
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0F0F0F] tracking-tight">
@@ -563,7 +563,7 @@ export default function BundleFlow() {
                 {/* Q1: Room dimensions */}
                 <div className="bg-white rounded-2xl p-7">
                   <div className="flex items-start gap-4">
-                    <div className="w-7 h-7 rounded-full bg-[#E8603C] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-7 h-7 rounded-full bg-[#00A86B] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-white text-xs font-bold">1</span>
                     </div>
                     <div className="flex-1">
@@ -602,7 +602,7 @@ export default function BundleFlow() {
                 {/* Q2: Bed size */}
                 <div className="bg-white rounded-2xl p-7">
                   <div className="flex items-start gap-4">
-                    <div className="w-7 h-7 rounded-full bg-[#E8603C] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-7 h-7 rounded-full bg-[#00A86B] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-white text-xs font-bold">2</span>
                     </div>
                     <div className="flex-1">
@@ -620,14 +620,14 @@ export default function BundleFlow() {
                             onClick={() => setBedSize(size)}
                             className={`py-4 px-4 rounded-xl border-2 transition-all duration-200 text-center ${
                               bedSize === size
-                                ? "border-[#E8603C] bg-orange-50"
+                                ? "border-[#00A86B] bg-green-50"
                                 : "border-gray-100 hover:border-gray-200"
                             }`}
                           >
                             <div
                               className={`text-xl font-black ${
                                 bedSize === size
-                                  ? "text-[#E8603C]"
+                                  ? "text-[#00A86B]"
                                   : "text-[#0F0F0F]"
                               }`}
                             >
@@ -712,7 +712,7 @@ export default function BundleFlow() {
 
                         <button
                           onClick={() => setOrdered(true)}
-                          className="w-full bg-[#E8603C] text-white font-semibold py-4 rounded-xl hover:bg-[#D4542F] transition-colors text-sm flex items-center justify-center gap-2"
+                          className="w-full bg-[#00A86B] text-white font-semibold py-4 rounded-xl hover:bg-[#007A4E] transition-colors text-sm flex items-center justify-center gap-2"
                         >
                           Get my bundle <ArrowRight />
                         </button>
@@ -760,7 +760,7 @@ export default function BundleFlow() {
 
             <div className="max-w-xl mx-auto">
               <div className="mb-10">
-                <div className="inline-flex items-center bg-[#E8603C] text-white text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
+                <div className="inline-flex items-center bg-[#00A86B] text-white text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
                   Personalised Bundle
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0F0F0F] tracking-tight">
@@ -848,7 +848,7 @@ export default function BundleFlow() {
                   disabled={!dimsValid}
                   className={`w-full py-4 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-all duration-200 ${
                     dimsValid
-                      ? "bg-[#E8603C] text-white hover:bg-[#D4542F]"
+                      ? "bg-[#00A86B] text-white hover:bg-[#007A4E]"
                       : "bg-gray-100 text-gray-300 cursor-not-allowed"
                   }`}
                 >
@@ -869,7 +869,7 @@ export default function BundleFlow() {
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
               <div>
-                <div className="inline-flex items-center bg-[#E8603C] text-white text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
+                <div className="inline-flex items-center bg-[#00A86B] text-white text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full mb-4">
                   Personalised Bundle
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0F0F0F] tracking-tight">
@@ -884,7 +884,7 @@ export default function BundleFlow() {
                 <span className="text-sm text-gray-400">{roomArea} m²</span>
                 <button
                   onClick={() => goTo("personalised-dims")}
-                  className="text-xs text-[#E8603C] underline underline-offset-2 hover:no-underline transition-all"
+                  className="text-xs text-[#00A86B] underline underline-offset-2 hover:no-underline transition-all"
                 >
                   edit
                 </button>
@@ -916,7 +916,7 @@ export default function BundleFlow() {
                           onClick={() => toggleItem(id)}
                           className={`py-2.5 px-4 rounded-xl text-sm font-medium flex items-center justify-between transition-all duration-150 border ${
                             on
-                              ? "bg-orange-50 border-[#E8603C] text-[#0F0F0F]"
+                              ? "bg-green-50 border-[#00A86B] text-[#0F0F0F]"
                               : "bg-[#F5F5F5] border-transparent text-gray-400 hover:text-gray-600"
                           }`}
                         >
@@ -924,7 +924,7 @@ export default function BundleFlow() {
                           <span
                             className={`text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center ${
                               on
-                                ? "bg-[#E8603C] text-white"
+                                ? "bg-[#00A86B] text-white"
                                 : "bg-gray-200 text-gray-400"
                             }`}
                           >
@@ -951,7 +951,7 @@ export default function BundleFlow() {
                   {!ordered ? (
                     <button
                       onClick={() => setOrdered(true)}
-                      className="w-full bg-[#E8603C] text-white font-semibold py-3.5 rounded-xl hover:bg-[#D4542F] transition-colors text-sm flex items-center justify-center gap-2"
+                      className="w-full bg-[#00A86B] text-white font-semibold py-3.5 rounded-xl hover:bg-[#007A4E] transition-colors text-sm flex items-center justify-center gap-2"
                     >
                       Get my bundle <ArrowRight />
                     </button>

@@ -78,7 +78,7 @@ export default function Contact() {
                         setForm((p) => ({ ...p, name: e.target.value }))
                       }
                       placeholder="Your name"
-                      className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-transparent focus:outline-none focus:border-[#E8603C] transition-colors placeholder:text-gray-300"
+                      className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-transparent focus:outline-none focus:border-[#00A86B] transition-colors placeholder:text-gray-300"
                     />
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export default function Contact() {
                         setForm((p) => ({ ...p, email: e.target.value }))
                       }
                       placeholder="your@email.com"
-                      className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-transparent focus:outline-none focus:border-[#E8603C] transition-colors placeholder:text-gray-300"
+                      className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-transparent focus:outline-none focus:border-[#00A86B] transition-colors placeholder:text-gray-300"
                     />
                   </div>
                 </div>
@@ -110,14 +110,14 @@ export default function Contact() {
                     }
                     placeholder="Tell us about your situation — move-in date, room size, any questions..."
                     rows={5}
-                    className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-transparent focus:outline-none focus:border-[#E8603C] transition-colors resize-none placeholder:text-gray-300"
+                    className="w-full bg-[#F5F5F5] rounded-xl px-4 py-3 text-sm text-[#0F0F0F] border border-transparent focus:outline-none focus:border-[#00A86B] transition-colors resize-none placeholder:text-gray-300"
                   />
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 pt-1">
                   <button
                     type="submit"
-                    className="flex-1 bg-[#E8603C] text-white font-semibold py-4 rounded-xl hover:bg-[#D4542F] transition-colors text-sm"
+                    className="flex-1 bg-[#00A86B] text-white font-semibold py-4 rounded-xl hover:bg-[#007A4E] transition-colors text-sm"
                   >
                     Send Message
                   </button>

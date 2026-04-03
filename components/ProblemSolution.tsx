@@ -1,14 +1,13 @@
 const problems = [
   "Empty room on move-in day. No bed, no desk — nowhere to start.",
   "No car, no van. Getting furniture across Amsterdam is a nightmare.",
-  "New furniture costs €2,000+. Students don't have that budget.",
   "Endless marketplace listings, failed meetups, and poor-quality pieces.",
 ];
 
 const solutions = [
-  "Curated bundles — everything you need in one clean order.",
+  "Curated second-hand bundles — pre-loved pieces, everything you need in one clean order.",
   "Free delivery and full assembly. We bring it to your door, set up.",
-  "Student pricing from €800. Real quality that actually fits a room.",
+  "Student pricing from €889. Quality second-hand furniture that actually fits a room.",
   "Buy-back on move-out. We take it all back, you get money back.",
 ];
 
@@ -57,16 +56,16 @@ export default function ProblemSolution() {
           </div>
 
           {/* Solution card */}
-          <div className="bg-white rounded-2xl p-8 border-2 border-[#E8603C]">
-            <div className="inline-flex items-center gap-2 bg-orange-50 text-[#E8603C] text-xs font-semibold uppercase tracking-[0.12em] px-3 py-1.5 rounded-full mb-7">
+          <div className="bg-white rounded-2xl p-8 border-2 border-[#00A86B]">
+            <div className="inline-flex items-center gap-2 bg-green-50 text-[#00A86B] text-xs font-semibold uppercase tracking-[0.12em] px-3 py-1.5 rounded-full mb-7">
               The Intermove Solution
             </div>
             <ul className="space-y-5">
               {solutions.map((text, i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <span className="w-5 h-5 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="w-5 h-5 rounded-full bg-green-50 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg
-                      className="w-2.5 h-2.5 text-[#E8603C]"
+                      className="w-2.5 h-2.5 text-[#00A86B]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
