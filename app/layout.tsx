@@ -12,8 +12,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Intermove — Turn empty rooms into homes",
   description:
-    "Curated second-hand furniture bundles for students in Amsterdam. Pre-loved pieces, delivered and assembled.",
-  keywords: "furniture, student, Amsterdam, bundle, room, delivery, second-hand",
+    "Affordable furniture bundles for students in Amsterdam. Choose, preview, and get it delivered.",
+  keywords: "furniture, student, Amsterdam, bundle, room, delivery",
 };
 
 export default function RootLayout({

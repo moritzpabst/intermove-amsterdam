@@ -6,7 +6,7 @@ const problems = [
 
 const solutions = [
   "Curated second-hand bundles — pre-loved pieces, everything you need in one clean order.",
-  "Free delivery and full assembly. We bring it to your door, set up.",
+  "Free delivery and full assembly. We bring it to your door and set it up.",
   "Student pricing from €889. Quality second-hand furniture that actually fits a room.",
   "Buy-back on move-out. We take it all back, you get money back.",
 ];

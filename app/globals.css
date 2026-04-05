@@ -8,8 +8,8 @@ html {
 
 @layer base {
   body {
-    color: #111111;
-    background: #FAFAF7;
+    color: #0F0F0F;
+    background: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -18,7 +18,7 @@ html {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(28px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -32,11 +32,11 @@ html {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fadeInUp 0.6s ease-out both;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.55s ease-out forwards;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .animate-delay-100 { animation-delay: 100ms; }

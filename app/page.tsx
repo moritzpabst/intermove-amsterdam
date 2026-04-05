@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProblemSolution from "@/components/ProblemSolution";
 import HowItWorks from "@/components/HowItWorks";
-import ScrollShowcase from "@/components/ScrollShowcase";
 import BundleFlow from "@/components/BundleFlow";
 import BuyBack from "@/components/BuyBack";
 import SellToUs from "@/components/SellToUs";
@@ -16,7 +15,6 @@ export default function Home() {
       <Hero />
       <ProblemSolution />
       <HowItWorks />
-      <ScrollShowcase />
       <BundleFlow />
       <BuyBack />
       <SellToUs />
