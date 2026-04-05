@@ -1,117 +1,58 @@
-const benefits = [
-  "No hassle — we handle pickup and all logistics.",
-  "Fair assessment within 24 hours of your request.",
-  "Payment sent directly to your bank account.",
-  "Furniture gets cleaned and recirculated, not thrown away.",
-];
-
 export default function BuyBack() {
   return (
-    <section className="py-24 bg-[#F5F5F5]">
+    <section className="py-10 bg-[#FAFAF7]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Text side */}
+        <div className="bg-[#111111] rounded-3xl px-8 md:px-14 py-10 md:py-12 grid md:grid-cols-3 gap-8 md:gap-6 items-center">
+
+          {/* Left — heading + subtext */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-6">
-              Circular Model
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0F0F0F] tracking-tight mb-6">
-              Moving out?
-              <br />
-              We buy it back.
-            </h2>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              When your time in Amsterdam is up, Intermove buys your furniture
-              back. No listings, no strangers, no dumping it on the street. Just
-              a clean exit — with money back in your pocket.
+            <p className="text-[#666] text-[10px] font-semibold uppercase tracking-[0.18em] mb-4">
+              Circular model
             </p>
-            <ul className="space-y-3.5">
-              {benefits.map((b, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg
-                      className="w-2.5 h-2.5 text-green-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={3}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  </span>
-                  <span className="text-gray-500 text-sm leading-relaxed">{b}</span>
-                </li>
-              ))}
-            </ul>
+            <h3 className="text-2xl md:text-[28px] font-bold text-white leading-snug mb-3">
+              Move out?<br />We buy it back.
+            </h3>
+            <p className="text-[#777] text-sm leading-relaxed max-w-xs">
+              Get up to 25% of your bundle price back when you leave Amsterdam.
+              No listings, no hassle — just money in your pocket.
+            </p>
           </div>
 
-          {/* Stats side */}
-          <div className="flex flex-col gap-4">
-            {/* Hero stat */}
-            <div className="bg-[#0F0F0F] rounded-2xl p-10 text-center">
-              <div className="text-7xl font-black text-white tracking-tight mb-2">
-                25%
+          {/* Centre — big % */}
+          <div className="text-center">
+            <div className="text-[88px] md:text-[100px] font-bold text-[#00A86B] leading-none">
+              25%
+            </div>
+            <div className="text-[#555] text-xs mt-2 font-medium">average buy-back value</div>
+          </div>
+
+          {/* Right — stats + CTA */}
+          <div className="flex flex-col items-start md:items-end gap-5">
+            <div className="space-y-1.5 text-sm md:text-right">
+              <div className="text-[#888]">
+                Avg. money back:{" "}
+                <span className="text-white font-semibold">€222+</span>
               </div>
-              <div className="text-gray-500 text-sm font-medium">
-                average buy-back value
+              <div className="text-[#888]">
+                Assessment within:{" "}
+                <span className="text-white font-semibold">24 hours</span>
               </div>
-              <div className="text-gray-600 text-xs mt-1">
-                of your original bundle price
+              <div className="text-[#888]">
+                Payment method:{" "}
+                <span className="text-white font-semibold">Direct bank</span>
               </div>
             </div>
-
-            {/* Sub stats */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white rounded-2xl p-6 text-center">
-                <div className="text-2xl font-black text-[#0F0F0F] tracking-tight mb-1">
-                  €222+
-                </div>
-                <div className="text-xs text-gray-400 leading-snug">
-                  avg. money back
-                </div>
-              </div>
-              <div className="bg-white rounded-2xl p-6 text-center">
-                <div className="text-2xl font-black text-[#0F0F0F] tracking-tight mb-1">
-                  24h
-                </div>
-                <div className="text-xs text-gray-400 leading-snug">
-                  assessment turnaround
-                </div>
-              </div>
-            </div>
-
-            {/* CTA */}
             <a
               href="#contact"
-              className="bg-white rounded-2xl p-5 flex items-center justify-between group hover:border-[#00A86B] border-2 border-transparent transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-[#00A86B] hover:bg-[#007A4E] transition-colors text-white font-semibold text-sm px-6 py-3 rounded-xl"
             >
-              <div>
-                <div className="text-sm font-semibold text-[#0F0F0F]">
-                  Ready to move out?
-                </div>
-                <div className="text-xs text-gray-400 mt-0.5">
-                  Start your buy-back request
-                </div>
-              </div>
-              <svg
-                className="w-5 h-5 text-gray-300 group-hover:text-[#00A86B] transition-colors"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
+              Start buy-back
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
           </div>
+
         </div>
       </div>
     </section>

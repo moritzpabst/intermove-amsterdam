@@ -17,13 +17,14 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
         <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <p
-            className="text-xs font-semibold text-[#00A86B] uppercase tracking-[0.2em] mb-8 animate-fade-in-up"
+          {/* Badge */}
+          <div
+            className="inline-flex items-center gap-2 border border-[#00A86B]/50 bg-[#00A86B]/15 text-[#00A86B] text-xs font-semibold px-4 py-1.5 rounded-full mb-8 animate-fade-in-up"
             style={{ animationDelay: "0ms", opacity: 0 }}
           >
-            Amsterdam &middot; Student Furniture &middot; Since 2026
-          </p>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00A86B] flex-shrink-0" />
+            Amsterdam · Second-hand furniture
+          </div>
 
           {/* Headline */}
           <h1
@@ -32,7 +33,8 @@ export default function Hero() {
           >
             Turn empty rooms
             <br />
-            into homes.
+            into{" "}
+            <span className="text-[#00A86B]">homes.</span>
           </h1>
 
           {/* Sub */}
@@ -40,7 +42,8 @@ export default function Hero() {
             className="text-lg md:text-xl text-gray-300 leading-relaxed mb-12 max-w-xl animate-fade-in-up"
             style={{ animationDelay: "160ms", opacity: 0 }}
           >
-            Curated second-hand furniture bundles for students in Amsterdam. Pre-loved pieces, delivered and fully assembled.
+            Curated second-hand furniture bundles for students in Amsterdam.
+            Pre-loved pieces, delivered and fully assembled.
           </p>
 
           {/* CTAs */}

@@ -21,15 +21,15 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-200 ${
-        scrolled ? "border-b border-gray-100 shadow-sm" : ""
+      className={`fixed top-0 left-0 right-0 z-50 bg-[#FAFAF7] transition-all duration-200 ${
+        scrolled ? "border-b border-[#EBEBEB] shadow-sm" : ""
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#"
-          className="text-xl font-bold text-[#0F0F0F] tracking-tight hover:opacity-80 transition-opacity"
+          className="text-xl font-bold text-[#111111] tracking-tight hover:opacity-80 transition-opacity"
         >
           Intermove
         </a>
@@ -93,7 +93,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden border-t border-[#EBEBEB] bg-[#FAFAF7] px-6 py-5 flex flex-col gap-4">
           {links.map((link) => (
             <a
               key={link.href}
